@@ -12,7 +12,7 @@ class Calibration:
     def __init__(self):
         self.robot = Robot()
 
-        homedir = os.path.join(os.path.expanduser('~'), "grasp-comms")
+        homedir = os.path.join(os.path.expanduser('~'), "catkin_build_ws/src/baxter-pnp/grasp_common")
         self.move_completed = os.path.join(homedir, "move_completed.npy")
         self.tool_position = os.path.join(homedir, "tool_position.npy")
         
